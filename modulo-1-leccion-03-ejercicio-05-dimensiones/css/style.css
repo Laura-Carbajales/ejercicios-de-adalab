@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 5px solid blue;
+}

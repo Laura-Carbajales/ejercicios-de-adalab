@@ -1,0 +1,25 @@
+.block {
+    height: 100px;
+    width: 100px;
+    background: darkgrey;
+  }
+
+.inline {
+    height: 100px;
+    width: 100px;
+    display: inline;
+    background-color: darkgrey;
+   }
+
+.inline-block {
+    height: 100px;
+    width: 100px;
+    background: darkgrey;
+    display: inline-block;
+   }
+
+.none {
+    height: 100px;
+    width: 100px;
+    display: none;
+}

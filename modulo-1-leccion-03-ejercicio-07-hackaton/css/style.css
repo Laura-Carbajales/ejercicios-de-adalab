@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px;
+}
+
+.page-title {
+    margin: 0;
+}
+
+.main {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.user-info {
+    width: 300px;
+    padding: 8px 16px;
+    margin: 16px;
+    border-left: 3px solid #f93af9;
+    background-color: #f3f3f3;
+    display: inline-block;
+}
+
+.user-info * {
+    display: inline;
+}
+
+.user-info__name {
+    margin: 8px 0
+}
+
+.user-info__mail {
+    display: inline-block;
+    max-width: 284px;
+    padding: 4px;
+    margin-bottom: 8px;
+    background-color: #d4d4d4;
+    color: #f93af9;
+    text-decoration: none;
+    font-weight: bold;
+    overflow-x: scroll;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
