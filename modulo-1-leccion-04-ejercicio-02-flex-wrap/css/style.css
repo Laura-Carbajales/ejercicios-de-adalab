@@ -1,0 +1,12 @@
+.container-1 {
+    background-color: #fbd5e5;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 200px;
+    height: 100px;
+}
