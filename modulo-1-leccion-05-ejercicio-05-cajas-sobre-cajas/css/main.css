@@ -1,0 +1,32 @@
+
+.div1 {
+    height: 500px;
+    width: 500px;
+    background-color: lemonchiffon;
+    position: absolute;
+    padding: 40px;
+    border: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.div2 {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(160, 240, 160);
+    position: absolute;
+    padding: 75px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.div3 {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(121, 185, 240);
+    position: absolute;
+    border-style: dotted;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

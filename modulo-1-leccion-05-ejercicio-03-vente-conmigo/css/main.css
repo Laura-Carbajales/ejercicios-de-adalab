@@ -1,0 +1,13 @@
+.header {
+    background-color: lightpink;
+    width: 100%;
+    position: fixed;
+    z-index: 990;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    position: relative;
+    top: 50px;
+}
+
