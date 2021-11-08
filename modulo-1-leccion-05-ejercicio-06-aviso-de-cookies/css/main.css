@@ -1,0 +1,23 @@
+.header {
+    background-color: black;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: relative;
+}
+.main {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+}
+.cookies {
+    align-self: flex-end;
+    background-color: rgb(242, 242, 136);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0vh;
+}
