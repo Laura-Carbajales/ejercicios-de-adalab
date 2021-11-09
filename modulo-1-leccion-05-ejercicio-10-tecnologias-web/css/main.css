@@ -1,3 +1,9 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .tooltip {
     position: relative;
     display: inline-block;
@@ -62,9 +68,9 @@ nav {
 }
 main {
     padding-top: 50px;
-    min-height: 100vh;
     margin-left: 20%;
     margin-right: 20%;
+    flex-grow: 1;
 }
 .title-article {
     margin-bottom: 10px;
