@@ -1,0 +1,104 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tiptext {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.tooltip .tiptext {
+    visibility: hidden;
+    width: 400px;
+    height: 200px;
+    font-size: 14px;
+    background-color: white;
+    color: rgb(46, 46, 46);
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.tooltip:hover .tiptext {
+    visibility: visible;
+}
+.tooltip.top .tiptext{
+    bottom: 120%;
+    left: 30%;
+}
+header {
+    background-color: rgb(52, 51, 51);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 100px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    list-style: none;
+}
+.item {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+main {
+    padding-top: 50px;
+    min-height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.title-article {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.subtitle-article {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.item2 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+footer {
+    align-self: flex-end;
+    background-color: rgb(52, 51, 51);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.name {
+    margin-right: 5px;
+}
