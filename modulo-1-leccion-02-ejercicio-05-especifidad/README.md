@@ -30,4 +30,4 @@ Partiendo de este código:
 
 - Para ello eliminamos o "comentamos" el segundo selector y los links se vuelven rojos.
 
-- En apariencia, la pagina permanece exactamente igual.
+- Todos los selectores de etiqueta dejan de funcionar.
