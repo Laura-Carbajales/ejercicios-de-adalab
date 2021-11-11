@@ -1,0 +1,14 @@
+body {
+	background-color: rgb(242, 140, 140);
+}
+
+@media all and (min-width:480px) {
+	body {
+		background-color: lemonchiffon;
+	}
+
+@media all and (min-width:768px) {
+	body {
+		background-color: rgb(180, 244, 180);
+	}
+}

@@ -1,0 +1,102 @@
+.nav-container {
+    width: 100%;
+    height: 60px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+}
+.item {
+    color: white;
+}
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.footer-container {
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    padding-top:80px;
+}
+.rr-ss {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: flex-start;
+
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item {
+    padding-right: 10px;
+}
+.cookies-container {
+    width: 40%;
+    min-height: 150px;
+    background-color: rgba(23, 23, 23, 0.892);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+.cookies {
+    font-size: 12px;
+    
+}
+
+.bottom-cookies {
+    background-color: rgb(80, 120, 80);
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.bottom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
