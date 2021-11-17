@@ -1,0 +1,102 @@
+.form__container {
+    background: linear-gradient(to bottom, white, rgb(185, 203, 223));
+    border-radius: 5px;
+    width: 500px;
+    height: 650px;
+    padding: 20px; 
+}
+
+.form__title {
+    font-size: 35px;
+    padding: 20px 0 20px 0;
+}
+
+.form__text--main {
+    font-size: 20px;
+    padding: 0px 0 9px 0;
+}
+
+.form {
+    display: inline;
+}
+.form__item--name {
+    width: 49%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+.form__item {
+    height: 40px;
+    width: 99%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    font-size: 15px;
+
+}
+
+.form__birthday--day {
+    height: 35px;
+    width: 85px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+
+.form__link--birthday {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(23, 23, 165);
+    display: inline-block;
+    width: 180px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transform: translateY(8px);
+}
+
+.form__gender {
+    display: inline;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.form__terms {
+    display: inline-block;
+    width: 380px;
+    margin-top: 20px;
+}
+
+.form__terms a {
+    text-decoration: none;
+    color: rgb(23, 23, 165);
+}
+.form__buttom--create {
+    margin-top: 30px;
+    height: 50px;
+    width: 220px;
+    border-radius: 10px;
+    background: rgb(70, 160, 70);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(61, 125, 61);
+}
+
+.form__buttom--reset {
+    margin-top: 30px;
+    height: 50px;
+    width: 220px;
+    border-radius: 10px;
+    background: rgb(145, 145, 145);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(145, 145, 145);
+    margin-left: 10px;
+}

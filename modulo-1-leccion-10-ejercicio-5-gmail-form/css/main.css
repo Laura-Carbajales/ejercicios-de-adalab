@@ -1,0 +1,100 @@
+.form__container {
+    background: rgb(238, 238, 238);
+    width: 500px;
+    height: 950px;
+    padding: 20px; 
+}
+
+.form {
+    display: inline;
+}
+
+.form__item--value {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 7px 0;
+}
+
+.form__item--name {
+    width: 49%;
+    height: 40px;
+    border-radius: 2px;
+    padding: 10px;
+    border: 2px solid rgb(216, 216, 216);
+    font-size: 20px;
+}
+
+.form__item {
+    height: 40px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    border: 2px solid rgb(216, 216, 216);
+    font-size: 20px;
+}
+
+.form__item--gmail {
+    height: 40px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    border: 2px solid rgb(216, 216, 216);
+    font-size: 20px;
+    text-align: end;
+}
+
+.form__birthday--day {
+    height: 40px;
+    width: 110px;
+    padding: 7px;
+    border: 2px solid rgb(203, 203, 203);
+    font-size: 20px;
+    color: rgb(160, 159, 159);
+}
+
+.form__birthday--month {
+    height: 40px;
+    width: 210px;
+    padding: 7px;
+    border: 2px solid rgb(203, 203, 203);
+    background-color: rgb(238, 238, 238);
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+
+
+}
+
+.form__gender {
+    height: 40px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 7px;
+    border: 2px solid rgb(216, 216, 216);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form__country {
+    height: 40px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 7px;
+    border: 2px solid rgb(216, 216, 216);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form__buttom--create {
+    margin-top: 30px;
+    height: 45px;
+    width: 160px;
+    border-radius: 4px;
+    background: rgb(70, 160, 70);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid rgb(61, 125, 61);
+    transform: translateX(300px);
+}
