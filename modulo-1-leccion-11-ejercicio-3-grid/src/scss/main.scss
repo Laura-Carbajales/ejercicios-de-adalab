@@ -1,0 +1,51 @@
+@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-gap: 0px;
+}
+
+.item {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.item1 {
+  background-color: pink;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row: 1;
+}
+.item2 {
+  background-color: rebeccapurple;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.item3 {
+  background-color: salmon;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.item6 {
+  background-color: rgb(102, 151, 171);
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
