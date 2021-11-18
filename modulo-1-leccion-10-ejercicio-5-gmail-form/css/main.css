@@ -98,3 +98,16 @@
     border: 2px solid rgb(61, 125, 61);
     transform: translateX(300px);
 }
+
+.phone {
+    padding-left: 70px;
+}
+
+.flat {
+    height: 35px;
+    width: 50px;
+    border: 1px solid white;
+    margin-left: 10px;
+    position: absolute;
+    transform: translateY(-38px);
+}

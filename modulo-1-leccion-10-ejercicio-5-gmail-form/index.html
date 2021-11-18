@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -24,42 +27,11 @@
             <label class="form__item--value" for="confirm_password">Confirma tu contraseña</label>
             <input class="form__item" #id="confirm_password" placeholder="" type="password" name="password" required>
             <label class="form__item--value" for="birthday">Fecha de nacimiento</label>
-            <select class="form__birthday--day" id="birthday" name="size">
-                <option value="01">Día</option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
+
+            <label class="form__birthday" for="day"></label>
+            <input class="form__birthday--day" #id="day" placeholder="Día" type="text" name="day" required>
             <select class="form__birthday--month" id="birthday" name="month">
-                <option value="01">Mes</option>
+                <option value="01" disabled selected hidden>Mes</option>
                 <option value="January">January</option>
                 <option value="February">February</option>
                 <option value="March">March</option>
@@ -73,41 +45,27 @@
                 <option value="November">November</option>
                 <option value="December">December</option>
             </select>
-            <select class="form__birthday--day" id="birthday" name="year">
-                <option value="01">Año</option>
-                <option value="1983">1983</option>
-                <option value="1984">1984</option>
-                <option value="1985">1985</option>
-                <option value="1986">1986</option>
-                <option value="1987">1987</option>
-                <option value="1988">1988</option>
-                <option value="1989">1989</option>
-                <option value="1990">1990</option>
-                <option value="1991">1991</option>
-                <option value="1992">1992</option>
-                <option value="1993">1993</option>
-                <option value="1994">1994</option>
-                <option value="1995">1995</option>
-                <option value="1996">1996</option>
-                <option value="1997">1997</option>
-                <option value="1998">1998</option>
-                <option value="1999">1999</option>
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-                <option value="2003">2003</option>
-                <option value="2004">2004</option>
-            </select>
-
+            <label class="form__birthday" for="year"></label>
+            <input class="form__birthday--day" #id="year" placeholder="Año" type="text" name="year" required>
             <label class="form__item--value" for="gender">Sexo</label>
             <select class="form__gender" id="gender" name="gender">
-                <option value="Selector">Seleciona tu género</option>
+                <option value="Selector" disabled selected hidden>Seleciona tu género</option>
                 <option value="Mujer">Mujer</option>
                 <option value="Hombre">Hombre</option>
             </select>
 
 
             <label class="form__item--value" for="mobile_phone">Teléfono móvil</label>
-            <input class="form__item" #id="mobile_phone" placeholder="+34" type="tel" name="mobile_phone" required>
+            <input class="form__item phone" #id="mobile_phone" placeholder="+34" type="tel" name="mobile_phone"
+                required>
+            <select class="flat" id="flat" name="flat">
+                <option value="España">🇪🇸</option>
+                <option value="francia">🇫🇷</option>
+                <option value="portugal">🇵🇹</option>
+                <option value="uk">🇬🇧</option>
+            </select>
+
+
             <label class="form__item--value" for="mail">Tu dirección de correo electrónico actual</label>
             <input class="form__item" #id="mail" placeholder="" type="email" name="mail" required>
 
