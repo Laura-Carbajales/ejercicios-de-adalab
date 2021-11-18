@@ -1,0 +1,42 @@
+@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+
+.header {
+  background-color: pink;
+  color: white;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  background-color: rebeccapurple;
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: salmon;
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: rgb(102, 151, 171);
+  color: white;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
