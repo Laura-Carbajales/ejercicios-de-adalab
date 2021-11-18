@@ -1,0 +1,42 @@
+@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.item {
+  background: deeppink;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item3 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}

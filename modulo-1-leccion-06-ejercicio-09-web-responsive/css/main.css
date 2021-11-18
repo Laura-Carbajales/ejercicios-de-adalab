@@ -1,115 +1,54 @@
 body {
-	background-color: rgb(203, 203, 203);
-	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightgray;
 }
-.title {
-	width: 100vw;
-	height: 80px;
+.header__title {
+	padding-bottom: 1em;
 }
-.menu {
-	width: 100%;
-	background-color: rgb(89, 252, 89);
-}
-.item {
-	font-size: 20px;
-}
-.main-info {
-	width: 100%;
+.content {
 	background-color: yellow;
-	font-size: 20px;
-	line-height: 1.5;
-	box-sizing: border-box;
-	padding-bottom: 10px;
 }
-.title-main {
-	font-size: 40px;
-	margin-bottom: 30px;
+.content__title {
+	padding-bottom: 1em;
 }
-.related-info {
-	width: 100%;
-	background-color: grey;
-	font-size: 20px;
-	line-height: 1.5;
-	margin: 20px 0;
-}
-.orange {
-	width: 50%;
-	height:80%;
-	background-color: orange;
-	display: none;
-}
-.Z {
-	box-sizing: border-box;
+.content__info {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
 	flex-wrap: wrap;
-	width: 100%;
-	height: 100%;
 }
-.parrafo {
+.content__orange {
+	background-color: orange;
+}
+.content__paragraph {
 	width: 50%;
-	height:40%;
+}
+.related {
+	background-color: gray;
+	margin: 1em 0;
+}
+.menu {
+	background-color: greenyellow;
 }
 
-
-@media all and (min-width:480px) {
-	body {
+@media (min-width: 480px) {
+	.page {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: flex-end;
 	}
-	.menu{
-		max-width: 30%;
-		min-width: 100px;
-		max-height: 200px;
-		margin-right: 20px;
+	.related {
+		width: 60%;
+		margin: 0;
 	}
-	.articles {
-		display: flex;
-		flex-direction: row;
+	.content {
+		width: 60%;
 	}
-	.text-total {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 100vw;
+	.menu {
+		width: calc( 40% - 1em );
+		margin-right: 1em;
 	}
-		
-	.orange {
+	.content__orange {
 		width: 50%;
-		height:80%;
 		background-color: orange;
-		position: absolute;
-	}
-	.Z {
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: flex-start;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 100%;
-	}
-	.parrafo {
-		width: 50%;
-		height:40%;
-	}
-}
-
-@media all and (min-width:768px) {
-	body {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-	.header {
-		max-width: ;
-	}
-	.articles {
-		max-width: 
-	
 	}
 }
