@@ -1,11 +1,5 @@
-## Ejercicio 1
+# Ejercicio 4
 
-# Enunciado
+## Enunciado
 
-Partiendo del ejemplo de codepen, conseguid una composición como la de la imagen.
-A la hora de posicionar los elementos en el grid, también podemos usar la palabra span para indicar cuánto se expande desde la fila/columna actual. Por ejemplo, para el item1 que se expandía desde la línea de grid 1 a la 4 podríamos usar:
-
-```
-.item1 {
-  grid-column: span 3;
-```
+Vamos a hacer algo más del día a día: partiendo de un contenedor que ocupe el 100% de la pantalla (en alto y ancho) con una imagen de fondo y un título centrado... Tendremos que hacer que el título tenga una animación que lo haga entrar suavemente desde la parte superior del navegador y quedarse en el centro de su contenedor.

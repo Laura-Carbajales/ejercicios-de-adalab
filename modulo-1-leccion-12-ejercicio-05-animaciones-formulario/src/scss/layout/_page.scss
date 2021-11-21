@@ -1,0 +1,77 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #dfdfdf;
+  height: 500px;
+  width: 800px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 3.5rem;
+    color: #099d8d;
+  }
+  &__subtitle {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  &__input {
+    height: 40px;
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid rgb(154, 154, 154);
+    font-size: 16px;
+    &--buttom {
+      background-color: #099d8d;
+      color: white;
+      height: 40px;
+      width: 500px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+    }
+    &--email {
+      top: 7px;
+      position: relative;
+      right: 202px;
+      font-size: 14px;
+      color: black;
+      animation-name: animationmail;
+      animation-duration: 4s;
+      animation-timing-function: ease;
+    }
+  }
+}
+
+@keyframes animationmail {
+  0% {
+    font-size: 16px;
+    color: grey;
+    position: relative;
+    top: 39px;
+    right: 188px;
+  }
+  50% {
+    font-size: 16px;
+    color: grey;
+    position: relative;
+    top: 39px;
+    right: 188px;
+  }
+  100% {
+    top: 7px;
+    right: 202px;
+    font-size: 14px;
+    color: black;
+  }
+}
