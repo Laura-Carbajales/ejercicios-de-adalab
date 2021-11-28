@@ -1,0 +1,33 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_green {
+  height: 50px;
+  width: 200px;
+  border: 2px solid green;
+  border-radius: 50px;
+  color: green;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+}
+.button_red {
+  height: 50px;
+  width: 200px;
+  border: 2px solid red;
+  border-radius: 50px;
+  color: red;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+}
+
+.disabled {
+  border: 2px solid grey;
+  color: grey;
+}
