@@ -1,5 +1,16 @@
 'use strict';
-// avatar por defecto
-const DEFAULT_AVATAR = 'http://placehold.it/300x300';
-// avatar que eligió el usuario al registrarse
-let userAvatar = 'http://www.fillmurray.com/300/300';
+let ingredient = '';
+
+switch (ingredient) {
+  case 'pollo':
+    console.log('Filete con patatas');
+    break;
+  case 'merluza':
+    console.log('Merluzita en salsa verde');
+    break;
+  case 'espinacas':
+    console.log('Espinacas rehogadas');
+    break;
+  default:
+    console.log('Nada en la nevera');
+}
