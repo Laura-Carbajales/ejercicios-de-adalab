@@ -1,8 +1,8 @@
 'use strict';
 
 function boxCal(borderBox, width, padding, boderSize) {
-  const widthContentBox = width - padding - boderSize;
-  const widthBorderBox = width + padding + boderSize;
+  const widthContentBox = width - padding * 2 - boderSize * 2;
+  const widthBorderBox = width + padding * 2 + boderSize * 2;
 
   if (borderBox) {
     return console.log(
