@@ -13,27 +13,39 @@ const tasks = [
 
 //HTML
 const list = document.querySelector('.list');
-const checkbox = document.querySelectorAll('.checkbox');
 
 //Crear bucle que recorra la lista 'tasks'
-for (let i = 0; i < tasks.length; i++) {
-  if (tasks[i].completed) {
-    list.innerHTML += `<li class="true">${tasks[i].name} <input class="checkbox" type="checkbox" checked></li>`;
-  } else {
-    list.innerHTML += `<li>${tasks[i].name}<input class="checkbox" type="checkbox"></li>`;
+function render() {
+  list.innerHTML = '';
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i].completed) {
+      list.innerHTML += `<li class="true"><input id=${i} class="checkbox" type="checkbox" checked>${tasks[i].name} </li>`;
+    } else {
+      list.innerHTML += `<li><input id=${i} class="checkbox" type="checkbox">${tasks[i].name}</li>`;
+    }
+  }
+
+  const checkbox = document.querySelectorAll('.checkbox');
+  //Listener
+  for (let i = 0; i < checkbox.length; i++) {
+    checkbox[i].addEventListener('click', handleClickCheckboxChecked);
   }
 }
+render();
 
 //Handle
 function handleClickCheckboxChecked(event) {
-  if (event.currentTarget.checked) {
-    event.currentTarget.parentNode.classList.add('true');
+  // if (event.currentTarget.checked) {
+  //   event.currentTarget.parentNode.classList.toggle('true');
+  // } else {
+  //   event.currentTarget.parentNode.classList.toggle('true');
+  // }
+  //Ahora vamos a cambiarlo no sólo visualmente, sino en el objeto.
+  const posTask = event.currentTarget.id;
+  if (tasks[posTask].completed) {
+    tasks[posTask].completed = false;
   } else {
-    event.currentTarget.parentNode.classList.remove('true');
+    tasks[posTask].completed = true;
   }
-}
-
-//Listener
-for (let i = 0; i < checkbox.length; i++) {
-  checkbox[i].addEventListener('click', handleClickCheckboxChecked);
+  render();
 }
