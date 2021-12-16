@@ -6,8 +6,8 @@ const select = document.querySelector('.js_select');
 const button = document.querySelector('.js_button');
 
 //Funcion numero aleatorio Math.random()
-function getRandomNumber(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
+function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
 }
 
 //Handler
@@ -18,9 +18,8 @@ function handlerClickChangeFace() {
   } else {
     face.innerHTML = ':(';
   }
-  //Funcion: Numero aleatorio
-  getRandomNumber(1, 100);
-  const randomNumber = getRandomNumber(1, 100);
+  //Declaro una constante con el numero aleatorio generado por la función getRandomNumber
+  const randomNumber = getRandomNumber(100);
   //Condicional: Que cambie el background con par/impar
   if (randomNumber % 2 === 0) {
     container.classList.add('yellow');
@@ -29,7 +28,7 @@ function handlerClickChangeFace() {
     container.classList.add('orange');
     container.classList.remove('yellow');
   }
-  //Que se muestre en consola el número aleatorio
+  //Que se muestre en consola el número aleatorio para comprobar si es par o impar
   console.log(randomNumber);
 }
 

@@ -58,7 +58,7 @@ console.log(averageAge2(adalabers));
 //Cear la función para saber la adalaber más joven
 function theYoungest(list) {
   //variable para ir gusrdando la edad minima de las adalabers mientras se recorre el bucle
-  let minAge = 100;
+  let minAge = list[0].age;
   //variable para ir gusrdando el nombre de la adalaber mas joven mientras se recorre el bucle
   let youngest = '';
   for (let i = 0; i < list.length; i++) {
