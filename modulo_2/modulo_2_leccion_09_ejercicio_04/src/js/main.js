@@ -1,18 +1,30 @@
 'use strict';
 
-//Array
-const tasks = [
-  { name: 'Recoger setas en el campo', completed: true },
-  { name: 'Comprar pilas', completed: true },
-  { name: 'Poner una lavadora de blancos', completed: true },
-  {
-    name: 'Aprender cómo se realizan las peticiones al servidor en JavaScript',
-    completed: false,
-  },
-];
+// //Array (comentado para poder hacerlo con APIs ->lección 2.10)
+// const tasks = [
+//   { name: 'Recoger setas en el campo', completed: true },
+//   { name: 'Comprar pilas', completed: true },
+//   { name: 'Poner una lavadora de blancos', completed: true },
+//   {
+//     name: 'Aprender cómo se realizan las peticiones al servidor en JavaScript',
+//     completed: false,
+//   },
+// ];
 
 //HTML
 const list = document.querySelector('.list');
+
+//<------Añadido con la lección 2.10 (APIs)------>
+let tasks = [];
+//fetch: obtener las tareas
+fetch('https://api.igarrido.es/tasks.json')
+  .then((response) => response.json())
+  .then((tasksData) => {
+    console.log(tasksData);
+    tasks = tasksData;
+    render();
+  });
+//<------------------------------------->
 
 //Crear bucle que recorra la lista 'tasks'
 function render() {
