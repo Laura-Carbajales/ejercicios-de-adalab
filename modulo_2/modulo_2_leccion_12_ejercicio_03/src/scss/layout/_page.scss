@@ -1,0 +1,16 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.select {
+  height: 35px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: gray;
+  margin: 30px;
+}
