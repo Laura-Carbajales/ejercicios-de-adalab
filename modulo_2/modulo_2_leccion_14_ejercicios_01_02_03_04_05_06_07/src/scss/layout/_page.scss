@@ -1,0 +1,52 @@
+.grape {
+  max-width: 50px;
+}
+.container {
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  font-family: sans-serif;
+}
+
+.container4 {
+  background-color: darkgray;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.container6 {
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.container7 {
+  background-image: url('https://qph.fs.quoracdn.net/main-qimg-074a9c305f1ee5d474fa76fab2358475');
+  background-size: cover;
+  background-position: center center;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__btn {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+  }
+}

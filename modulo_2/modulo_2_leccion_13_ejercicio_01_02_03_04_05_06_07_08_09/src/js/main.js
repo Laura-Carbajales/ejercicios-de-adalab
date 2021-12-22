@@ -101,5 +101,5 @@ console.log(users4);
 
 //Ejercicio 9
 const times = [56, 9, 45, 28, 35];
-const mean = times.reduce((acc, number) => acc + number);
-console.log(mean / times.length);
+const mean = times.reduce((acc, number) => acc + number / times.length, 0);
+console.log(mean);
