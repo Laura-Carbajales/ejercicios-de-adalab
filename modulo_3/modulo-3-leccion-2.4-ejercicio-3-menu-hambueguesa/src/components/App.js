@@ -7,28 +7,29 @@ import { useState } from 'react';
 
 function App() {
   const [menu, setMenu] = useState(false);
-  const [className, setClassName] = useState('hidden');
-  const handleMenu = (ev) => {
-    const newMenu = !menu;
-    setMenu(newMenu);
-    if (newMenu) {
-      setClassName('');
-    } else {
-      setClassName('hidden');
+
+  const handleToggleMenu = () => {
+    setMenu(!menu);
+  };
+  const renderComposeMenu = () => {
+    if (menu === true) {
+      return (
+        <nav className='header__nav'>
+          <img className='header__nav--icon' src={backIcon} alt='' onClick={handleToggleMenu} />
+          <h2 className='header__nav--title'>Menú</h2>
+        </nav>
+      );
     }
   };
 
   return (
     <div>
       <header className='header'>
-        <img className='header__menu' src={menuIcon} alt='' onClick={handleMenu} />
+        <img className='header__menu' src={menuIcon} alt='' onClick={handleToggleMenu} />
         <h1 className='header__title'>Materiales del curso</h1>
         <img className='header__search' src={searchIcon} alt='' />
       </header>
-      <nav className={`header__nav ${className}`}>
-        <img className='header__nav--icon' src={backIcon} alt='' onClick={handleMenu} />
-        <h2 className='header__nav--title'>Menú</h2>
-      </nav>
+      {renderComposeMenu()}
       <main className='main'>
         <h2 className='main__title'>Introducción</h2>
         <div className='main__div'>
